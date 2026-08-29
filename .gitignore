@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors
+.vscode/
+.idea/
+*~
+*.swp
+
+# Temporary files
+*.log
+*.tmp
+
+# Hydra / experiment outputs
+outputs/
+multirun/
+**/.hydra/

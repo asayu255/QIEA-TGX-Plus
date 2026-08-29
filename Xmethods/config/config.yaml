@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+  - models: tgat
+  - datasets: wikipedia
+  - explainers: pg_explainer_tg
+device_id: 1
+sparse_ratio: 0.2
+factual: 1
+existed: 1
+evaluate: True
+seed: 0
+func_index: 0
+n_trials: 500
+pop_size: 20
+mutate_pb: 0.1
+best_ind_pb: 0.0
+QIEA_agents: 1
+
+# Optional QIEA-TGX+ extension. Disabled by default so that the original
+# public QIEA-TGX behavior is preserved unless explicitly enabled.
+# Rotation-angle values are coefficients of pi.
+qiea_tgx_plus:
+  enabled: false
+  num_agents: 2
+  theta_s_min: 0.001
+  theta_s_max: 0.01
+  theta_l_min: 0.1
+  theta_l_max: 0.5
+  normalization_factor: 1.0
+  exchange_interval: 10
+  max_exchange_extension: 50
+  large_stagnation_patience: 80
+  stop_stagnation_patience: 150
+  tau_low: 0.1
+  tau_high: 0.9
